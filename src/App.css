@@ -1,0 +1,180 @@
+body {
+  background: #f4b73d; /* Old browsers */
+ background: -moz-linear-gradient(45deg, #f4b73d 5%, #ff4264 54%, #ed2112 100%); /* FF3.6-15 */
+ background: -webkit-linear-gradient(45deg, #f4b73d 5%,#ff4264 54%,#ed2112 100%); /* Chrome10-25,Safari5.1-6 */
+ background: linear-gradient(45deg, #f4b73d 5%,#ff4264 54%,#ed2112 100%);
+  color:#fff;
+}
+
+.form-style:target{
+  border-bottom: #d60031 !important;
+
+}
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #ed2112;
+    box-shadow: 0 1px 0 0 #ed2112;
+  }
+
+  .info {
+    color:#ccc;
+  }
+
+
+input {
+  font-size: 1.6em !important;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-transition-delay: 9999s;
+    -webkit-transition: color 9999s ease-out, background-color 9999s ease-out;
+}
+
+.collection {
+  border:none;
+}
+
+.collection-item{
+  background-color:transparent !important;
+  border-bottom: 1px solid rgba(255,255,255,.1) !important;
+  list-style: none;
+}
+
+.btn {
+  text-transform: none;
+  box-shadow:none;
+  border:1px solid #ff4264;
+  color:#ff4264;
+  background:none;
+}
+
+p {
+  font-size:1em;
+}
+
+.btn:hover {
+  background:#ff4264;
+  color:white;
+}
+
+.btn:focus {
+  background:#f4b73d !important;
+  color:white;
+}
+
+.p-4 {
+  margin: 1em;
+}
+
+.main {
+  margin-top:10vh;
+  margin-bottom:10vh;
+  display:flex;
+  align-items :center;
+  border-radius:8px;
+  min-height:600px;
+    background-color:#0A0A0A;
+  opacity:.98;
+}
+
+.weather {
+  padding:1em 3em !important;
+  height:80vh;
+  min-height:600px;
+  border-left:1px solid rgba(255,255,255,.03);
+}
+
+.image {
+  height:80vh;
+  min-height:600px;
+  /* background:url('./illustration.svg'); */
+  background-size:cover;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.logo {
+  margin:auto;
+  display:block;
+}
+
+
+/* .cls-1{
+  font-size:14px;
+  }
+  .cls-1,.cls-2,.cls-3,.cls-4{
+    fill:#fff;
+    }
+
+  .cls-1,.cls-3{
+    font-family:ArialNarrow-Bold,Arial;
+    font-weight:700;
+  }
+
+
+.cls-2,.cls-3{font-size:14px;}.cls-2{font-family:MyriadPro-Regular, Myriad Pro;} */
+
+.cls-1,.cls-6,.cls-7,.cls-8{
+  fill:#ccc;
+}
+
+.cls-2,.cls-3,.cls-4,.cls-5{
+  fill:none;
+  stroke:#ccc;
+  }
+
+.cls-2,.cls-3,.cls-5{
+  stroke-miterlimit:10;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 10s linear forwards;
+}
+
+.cls-3,.cls-4,.cls-5{
+  stroke-linecap:round;
+}
+
+.cls-3,.cls-4{
+  stroke-width:2px;
+  }
+
+.cls-4{
+  stroke-linejoin:round;
+  }
+
+.cls-6{font-size:17px}
+.cls-6,.cls-8{font-family:ArialNarrow-Bold, Arial;font-weight:700;}
+.cls-7,.cls-8{font-size:16px;}
+.cls-7{font-family:MyriadPro-Regular, Myriad Pro;}
+
+.contain {
+  display:flex;
+  align-items:center;
+  flex-direction: column;
+  height:inherit;
+}
+.thermostat {
+  height:75% !important;
+  width:75% !important;
+
+}
+
+.chip {
+  background:#181818;
+  color: white;
+  font-size:1.1em;
+}
+
+.cls-20{
+  transform-origin: center;
+  fill:#fff;
+}
+
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
