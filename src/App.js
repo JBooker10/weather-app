@@ -5,7 +5,9 @@ import Form from './components/Form'
 import Weather from './components/Weather'
 import './App.css';
 
+//Api Key
 const apiKey = "99dfe35fcb7de1ee"
+const crossOrigin = "https://cors-anywhere.herokuapp.com/"
 
 class App extends Component {
 
@@ -27,7 +29,7 @@ class App extends Component {
     const city = e.target.elements.city.value;
     const state = e.target.elements.state.value;
     if( city && state){
-    const response = await fetch(`https://api.wunderground.com/api/${apiKey}/conditions/q/${state}/${city}.json`)
+    const response = await fetch(`${crossOrgin}https://api.wunderground.com/api/${apiKey}/conditions/q/${state}/${city}.json`)
     const responseData = await response.json()
     console.log(responseData);
     this.setState({
