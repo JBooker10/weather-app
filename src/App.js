@@ -27,7 +27,7 @@ class App extends Component {
     const city = e.target.elements.city.value;
     const state = e.target.elements.state.value;
     if( city && state){
-    const response = await fetch(`http://api.wunderground.com/api/${apiKey}/conditions/q/${state}/${city}.json`)
+    const response = await fetch(`https://api.wunderground.com/api/${apiKey}/conditions/q/${state}/${city}.json`)
     const responseData = await response.json()
     console.log(responseData);
     this.setState({
